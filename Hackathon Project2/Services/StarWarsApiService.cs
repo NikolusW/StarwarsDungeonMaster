@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Hackathon_Project2.Services
 {
-    public class StarWarsApiService
+    public class StarWarsApiService : IStarWarsApiService
     {
         private enum HttpMethod
         {

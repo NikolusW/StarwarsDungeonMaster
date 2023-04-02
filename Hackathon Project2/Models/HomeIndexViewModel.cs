@@ -15,7 +15,7 @@ namespace Hackathon_Project2.Models
                 {
                     return _FilmSelectList;
                 }
-                return new SelectList(GetFilms(), "Id", "Title");
+                return new SelectList(GetFilms(), "Title", "Title");
             }
 
             set { _FilmSelectList = value; }
@@ -27,8 +27,9 @@ namespace Hackathon_Project2.Models
             {
                 if (_CharacterSelectList != null)
                 {
-                    return _Character
+                    return _CharacterSelectList;
                 }
+                return new SelectList(GetCharacters(), "Name", "Name");
             }
         }
 
@@ -43,6 +44,18 @@ namespace Hackathon_Project2.Models
             films.Add(new FilmModel() { Id = "6", Title = "Revenge of the Sith" });
 
             return films;
+        }
+
+        private List<PlayerModel> GetCharacters()
+        {
+            var characters = new List<PlayerModel>();
+            characters.Add(new PlayerModel() { Id = "1" , Name = "Luke Skywalker" });
+            characters.Add(new PlayerModel() { Id = "2", Name = "R2-D2" });
+            characters.Add(new PlayerModel() { Id = "3", Name = "Darth Vader" });
+            characters.Add(new PlayerModel() { Id = "4", Name = "Owen Lars" });
+            characters.Add(new PlayerModel() { Id = "5", Name = "Obi-Wan Kenobi" });
+
+            return characters;
         }
     }
 }

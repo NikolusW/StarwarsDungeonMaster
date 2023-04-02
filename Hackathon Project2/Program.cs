@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IStarWarsApiService, StarWarsApiService>();
+builder.Services.AddScoped<IChatGPTApiService, ChatGPTApiService>();
 
 var app = builder.Build();
 

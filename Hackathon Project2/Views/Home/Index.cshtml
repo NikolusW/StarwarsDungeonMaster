@@ -1,5 +1,7 @@
 ﻿@model HomeIndexViewModel
-
+<style>
+    body {background-color: white;} 
+</style>
 @{
     // don't believe this is necessary
     ViewData["Title"] = "Home Page";
@@ -14,7 +16,24 @@
 
 <div class="container mt-5">
     <div class="row justify-content-center align-items center">
-        <h2 class="display-4">Select Scenario</h2>
-         @Html.DropDownList("Id", Model.FilmSelectList as SelectList, "Select Film", new {@class = "form-control"})
+        <form asp-action="Scene_Selection" asp-controller="Scene" name="sceneselection" method="post">
+            <h2 class="display-7">Curate your game by choosing your favorite character and movie! </h2>
+            <label asp-for="FilmSelectList" class="form-label">Films</label>
+            @Html.DropDownList("Film", Model.FilmSelectList as SelectList, new {@class = "form-control"})
+            <p class="text-danger">
+
+            </p>
+            <label asp-for="CharacterSelectList" class="form-label">Characters</label>
+            @Html.DropDownList("Character", Model.CharacterSelectList as SelectList, new {@class = "form-control"})
+            <p class="text-danger">
+                
+            </p>
+            <div class="mb-3">
+                <!-- use the name "login" or "submit" for error handling when we use in C#-->
+                <button type="submit" name="dfs" class="btn btn-primary">Generate Scenario</button>
+            </div>
+        
+        </form>
+        <div/>
     </div>
 </div>

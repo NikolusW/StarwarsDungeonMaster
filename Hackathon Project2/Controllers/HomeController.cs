@@ -4,8 +4,8 @@ using System.Diagnostics;
 using SharpTrooper.Core;
 using Hackathon_Project2.Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using linw
-using AspNetCore;
+using System.Linq;
+//using AspNetCore;
 
 namespace Hackathon_Project2.Controllers
 {
@@ -23,9 +23,6 @@ namespace Hackathon_Project2.Controllers
         public IActionResult Index()
         {
             var model = new HomeIndexViewModel();
-            var items = _starWarsApiService.GetAllPeople()
-            //List<SelectListItem> item = _starWarsApiService.GetAllPeople();
-            //model.CharacterSelectList = _starWarsApiService.GetAllPeople();
 
             return View(model);
         }
