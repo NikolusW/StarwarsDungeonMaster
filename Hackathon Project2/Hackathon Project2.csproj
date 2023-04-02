@@ -15,4 +15,10 @@
     <ProjectReference Include="..\..\..\..\..\Downloads\SharpTrooper-master\SharpTrooper-master\SharpTrooper.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\IIS\Microsoft Web Deploy V3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -20,9 +20,8 @@ namespace Hackathon_Project2.Controllers
 
         public IActionResult Index()
         {
-            
-
-            return View();
+           
+            return View("Index");
         }
 
         public IActionResult Privacy()

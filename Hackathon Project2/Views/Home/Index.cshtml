@@ -1,4 +1,4 @@
-﻿@model FilmCharacterSelectionModel
+﻿@model HomeIndexViewModel
 
 @{
     // don't believe this is necessary
@@ -6,13 +6,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to our game!</h1>
+    <h1 class="display-4">Welcome to Dungeon and Dragons: Star Wars Themed!</h1>
 </div>
 
+<hr />
 
 
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="row justify-content-center align-items center">
+        <h2 class="display-4">Select Scenario</h2>
+         @Html.DropDownList("Id", Model.FilmSelectList as SelectList, "Select Film", new {@class = "form-control"})
+    </div>
 </div>
