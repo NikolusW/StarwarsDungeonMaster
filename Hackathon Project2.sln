@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon Project2", "Hackathon Project2\Hackathon Project2.csproj", "{6A3A5818-976C-4C58-8E0F-44925363A1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpTrooper", "..\..\..\..\Downloads\SharpTrooper-master\SharpTrooper-master\SharpTrooper.csproj", "{64FA6A89-9042-42A7-A331-A8D6FBC79340}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3A5818-976C-4C58-8E0F-44925363A1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3A5818-976C-4C58-8E0F-44925363A1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3A5818-976C-4C58-8E0F-44925363A1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3A5818-976C-4C58-8E0F-44925363A1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FA6A89-9042-42A7-A331-A8D6FBC79340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FA6A89-9042-42A7-A331-A8D6FBC79340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FA6A89-9042-42A7-A331-A8D6FBC79340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FA6A89-9042-42A7-A331-A8D6FBC79340}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2A2A781-2083-47E3-B02F-BCA8062CF87D}
+	EndGlobalSection
+EndGlobal
