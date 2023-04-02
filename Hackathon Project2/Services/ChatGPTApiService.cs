@@ -46,7 +46,7 @@ namespace Hackathon_Project2.Services
             
 
             string OutPutResult = "";
-            var api = new OpenAIAPI(new APIAuthentication("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"));
+            var api = new OpenAIAPI(new APIAuthentication(""));
             var chat = api.Chat.CreateConversation();
 
 

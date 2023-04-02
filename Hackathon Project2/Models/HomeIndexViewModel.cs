@@ -6,7 +6,7 @@ namespace Hackathon_Project2.Models
     {
         private SelectList _FilmSelectList { get; set; }
         public SelectList _CharacterSelectList  { get; set; }
-        // chubaka, han solo, jabba the hut, emeroro prop
+
         public SelectList FilmSelectList
         {
             get
